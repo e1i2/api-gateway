@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus # expose apis for health check and prometheus
+  endpoint:
+    health:
+      show-details: when_authorized
+
+spring:
+  application:
+    name: api-gateway
